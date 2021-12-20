@@ -14,29 +14,46 @@
         android:gravity="center"
         android:paddingTop="4dp"
         android:orientation="horizontal">
-
+        <!-- Video switching is not implemented for android
         <ImageButton android:id="@id/exo_prev"
+            android:layout_weight="1"
+            android:layout_width="0dp"
             style="@style/ExoMediaButton.Previous"/>
+        -->
 
         <ImageButton android:id="@id/exo_rew"
+            android:layout_weight="1"
+            android:layout_width="0dp"
             style="@style/ExoMediaButton.Rewind"/>
-        <FrameLayout
-            android:id="@+id/exo_play_pause_container"
-            android:layout_width="wrap_content"
+
+        <LinearLayout
             android:layout_height="wrap_content"
-            android:layout_gravity="center">
-            <ImageButton android:id="@id/exo_play"
-                style="@style/ExoMediaButton.Play"/>
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+                <FrameLayout
+                    android:id="@+id/exo_play_pause_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageButton android:id="@id/exo_play"
+                        style="@style/ExoMediaButton.Play"/>
 
-            <ImageButton android:id="@id/exo_pause"
-                style="@style/ExoMediaButton.Pause"/>
-        </FrameLayout>
-
+                    <ImageButton android:id="@id/exo_pause"
+                        style="@style/ExoMediaButton.Pause"/>
+                </FrameLayout>
+        </LinearLayout>
         <ImageButton android:id="@id/exo_ffwd"
+            android:layout_weight="1"
+            android:layout_width="0dp"
             style="@style/ExoMediaButton.FastForward"/>
 
+        <!-- Video switching is not implemented for android
         <ImageButton android:id="@id/exo_next"
-            style="@style/ExoMediaButton.Next"/>
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        style="@style/ExoMediaButton.Next"/>
+            -->
 
     </LinearLayout>
 
