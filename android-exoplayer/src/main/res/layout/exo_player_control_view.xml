@@ -25,26 +25,20 @@
             android:layout_width="0dp"
             style="@style/ExoMediaButton.Rewind"/>
 
-        <LinearLayout
+        <FrameLayout
+            android:id="@+id/exo_play_pause_container"
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
-            <FrameLayout
-                android:id="@+id/exo_play_pause_container"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content">
-                <ImageButton android:id="@id/exo_play"
-                    android:layout_width="match_parent"
-                    style="@style/ExoMediaButton.Play"/>
+            android:layout_height="wrap_content">
+            <ImageButton android:id="@id/exo_play"
+                android:layout_width="match_parent"
+                style="@style/ExoMediaButton.Play"/>
 
-                <ImageButton android:id="@id/exo_pause"
-                    android:layout_width="match_parent"
-                    style="@style/ExoMediaButton.Pause"/>
-            </FrameLayout>
-        </LinearLayout>
+            <ImageButton android:id="@id/exo_pause"
+                android:layout_width="match_parent"
+                style="@style/ExoMediaButton.Pause"/>
+        </FrameLayout>
+
 
         <ImageButton android:id="@id/exo_ffwd"
             android:layout_weight="1"
