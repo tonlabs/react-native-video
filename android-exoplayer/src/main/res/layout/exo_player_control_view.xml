@@ -16,9 +16,11 @@
         android:orientation="horizontal">
 
         <ImageButton android:id="@id/exo_prev"
+            android:layout_weight="1"
             style="@style/ExoMediaButton.Previous"/>
 
         <ImageButton android:id="@id/exo_rew"
+            android:layout_weight="1"
             style="@style/ExoMediaButton.Rewind"/>
         <FrameLayout
             android:id="@+id/exo_play_pause_container"
@@ -33,9 +35,11 @@
         </FrameLayout>
 
         <ImageButton android:id="@id/exo_ffwd"
+            android:layout_weight="1"
             style="@style/ExoMediaButton.FastForward"/>
 
         <ImageButton android:id="@id/exo_next"
+            android:layout_weight="1"
             style="@style/ExoMediaButton.Next"/>
 
     </LinearLayout>
